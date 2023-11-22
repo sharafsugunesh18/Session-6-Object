@@ -1,0 +1,31 @@
+You are given two arguments par1 and par2. You need to implement the function checkObject which will return true if one of the objects passed is an array else returns false.
+
+
+Hint 1: Array.isArray() is used to check if the object is an array or not.
+
+Hint 2: Use logical operator to check if either of the conditions is true.
+
+
+Sample Input
+['code', 'javascript'] , { language: 'javascript' }
+
+
+Sample Output
+true
+
+
+Explanation
+The first argument is an array so the output is true.
+
+
+////////
+
+
+function checkObject(par1, par2) {
+  var first = Array.isArray(par1);
+  var second = Array.isArray(par2);
+  if (first === true || second === true)
+    return true;
+  else
+    return false;
+}
